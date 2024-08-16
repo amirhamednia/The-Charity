@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!-- top-fixed-header -->
+  <header class="top-header container-fluid d-flex justify-content-between">
+    <!-- header colorlib logo -->
+    <div class="left-side d-flex align-items-center col-md-6">
+      <img src="images/logo.png" alt="logo-colorlib">
+      <a href="#">
+        <span>+</span>
+        THECHARITY
+      </a>
+    </div>
+    <!-- header icons -->
+    <div class="right-side d-flex align-items-center justify-content-end col-md-6">
+      <nav>
+        <a href="#">
+          <i class='fas fa-desktop white-color'></i>
+        </a>
+        <a href="#">
+          <i class='fas fa-tablet-alt white-color'></i>
+        </a>
+        <a href="#">
+          <i class='fas fa-mobile-alt white-color'></i>
+        </a>
+        <a href="#">
+
+          <i class='fas fa-shopping-cart white-color'></i>
+        </a>
+        <a href="#">
+           <i class='far fa-window-close white-color'></i>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <!-- sub header -->
+  <section class="sub-header container-fluid justify-content-between d-flex">
+    <nav class="navbar container">
+      <div class="navbar-child container-fluid">
+        <!-- text section -->
+        <div class="text-section col-md-9">
+          <a class="navbar-brand">
+            MAIL: contact@ourcharity.com
+          </a>
+          <a class="navbar-brand">
+            PHONE: +24 3772 120 091 / +56452 4567
+          </a>
+        </div>
+        <!-- donate now button -->
+        <div class="button-section col-md-3 d-flex justify-content-end">
+          <form class="d-flex" role="search">
+            <button class="btn donate-button" type="submit">
+              Donate Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- menu -->
+  <section class="menu container-fluid">
+    <div class="row container align-items-center margin-auto">
+      <!-- the charity logo -->
+      <div class="theCharity-logo d-flex align-items-center col-md-4 p-0">
+        <img src="images/logo.png.webp" alt="The Charity Logo">
+      </div>
+      <!-- desctop menu -->
+      <div class="menu-options d-flex align-items-center justify-content-end col-md-8 p-0">
+        <nav>
+          <ul class="d-flex">
+            <li>
+              <a href="#" class="home-option">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Causes</a>
+            </li>
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li class="active">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- mobile menu -->
+      <nav class="navbar opening-menu d-none ps-3">
+        <div class="container-fluid justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link selected-option" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Causes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galley</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- carousel -->
+  <section class="carousel-section container-fluid d-flex justify-content-center align-items-center">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <!-- carousel images -->
+      <div class="carousel-inner carousel-images">
+        <div class="carousel-item active">
+          <img src="images/hero.jpg.webp" class="d-block w-100" alt="children">
+        </div>
+        <div class="carousel-item">
+          <img src="images/hero.jpg.webp" class="d-block w-100" alt="children">
+        </div>
+        <div class="carousel-item">
+          <img src="images/hero.jpg.webp" class="d-block w-100" alt="children">
+        </div>
+
+        <div class="card carousel-card container-fluid d-flex justify-content-center">
+          <div class="card-body d-flex align-items-center justify-content-center">
+            <h5 class="card-title d-none d-md-block">Donate</h5>
+            <h6 class="card-subtitle d-none d-md-block mb-2">4 a better world</h6>
+            <p class="card-text d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis omnis dolore
+              delectus corporis autem alias natus totam et! Blanditiis dolore</p>
+            <div class="card-buttons">
+              <a href="#" class="card-link donate-now">Donate Now</a>
+              <a href="#" class="card-link read-more d-none d-md-flex">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- custom cards -->
+  <section class="container-fluid custom-cards d-flex my-5">
+    <div class="row container margin-auto">
+      <!-- first card -->
+      <div class="becomeVolunteer col-md-4">
+        <div class="card p-4">
+          <div class="card-head d-flex justify-content-center my-3">
+            <img src="images/hands-white.png.webp" class="card-img-top" alt="charity symbol">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Become a Volunteer</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum
+              mauris quis aliquam.</p>
+          </div>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="danceMusic col-md-4">
+        <div class="card p-4">
+          <div class="card-head d-flex justify-content-center my-3">
+            <img src="images/donation-gray.png.webp" class="card-img-top" alt="donation">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Dance & Music</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum
+              mauris quis aliquam..</p>
+          </div>
+        </div>
+      </div>
+      <!-- third card -->
+      <div class="onlineConference col-md-4">
+        <div class="card p-4">
+          <div class="card-head d-flex justify-content-center my-3">
+            <img src="images/charity-gray.png.webp" class="card-img-top" alt="raising money">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Online Conference</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum
+              mauris quis aliquam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- welcome to charity -->
+  <section class="welcome-charity d-flex my-5">
+    <div class="content d-flex">
+      <!-- container of content-child -->
+      <div class="content-child container d-flex align-items-center margin-auto">
+        <!-- welcome to charity text -->
+        <div class="content-text col-12 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Welcome to our Charity</h5>
+              <p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib
+                ulum mauris quis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus
+                vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque
+                at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod
+                sapien sodales ac. Duis viverra eleifend fermentum</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- boy with guitar -->
+        <div class="content-picture col-12 col-md-6">
+          <img src="images/welcome.jpg.webp" class="img-fluid" alt="a boy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events & Featured Cause -->
+  <section class="container-fluid d-flex events-section">
+    <div class="row container margin-auto  my-5">
+      <!-- Upcoming Events -->
+      <div class="upcomingEvents d-flex justify-content-center col-12 col-md-6">
+        <h2>
+          Upcoming Events
+        </h2>
+        <!-- first card -->
+        <div class="card mb-3 mt-4">
+          <div class="row g-0">
+            <div class="col-md-4 d-flex align-items-center img-children">
+              <img src="images/event-1.jpg.webp" class="img-fluid" alt="children">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title custom-card-title">Fundraiser for Kids</h5>
+                <a href="#" class="time-span ps-3">
+                  Aug 25, 2018
+                </a>
+                |
+                <a href="#" class="place-span pe-3">
+                  Ball Room New York
+                </a>
+                <p class="card-text mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib
+                  ulum mauris.</p>
+                <a href="#" class="card-link read-more-link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4 d-flex align-items-center img-children">
+              <img src="images/event-2.jpg.webp" class="img-fluid" alt="children">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title custom-card-title">Bring water to the childrens</h5>
+                <a href="#" class="time-span ps-3">
+                  Aug 25, 2018
+                </a>
+                |
+                <a href="#" class="place-span pe-3">
+                  Ball Room New York
+                </a>
+                <p class="card-text mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib
+                  ulum mauris.</p>
+                <a href="#" class="card-link read-more-link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- third card -->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4 d-flex align-items-center img-children">
+              <img src="images/event-3.jpg.webp" class="img-fluid" alt="children">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title custom-card-title">Bring water to the childrens</h5>
+                <a href="#" class="time-span ps-3">
+                  Aug 25, 2018
+                </a>
+                |
+                <a href="#" class="place-span pe-3">
+                  Ball Room New York
+                </a>
+                <p class="card-text mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib
+                  ulum mauris.</p>
+                <a href="#" class="card-link read-more-link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Featured Cause -->
+      <div class="featuredCause d-flex col-12 col-md-6">
+        <h2>
+          Featured Cause
+        </h2>
+        <!-- card -->
+        <div class="card long-card mb-3 mt-4">
+          <div class="row g-0">
+            <div class="col-md-6 long-card-img d-flex align-items-center justify-content-end">
+              <img src="images/featured-causes.jpg.webp" class="img-fluid d-flex align-items-center mt-5"
+                alt="children">
+            </div>
+            <div class="col-md-6 pt-5 long-card-text">
+              <div class="card-body pe-4">
+                <h5 class="card-title custom-card-title">Fundraiser for Kids</h5>
+                <a href="#" class="time-span ps-3">
+                  Aug 25, 2018
+                </a>
+                |
+                <a href="#" class="place-span pe-3">
+                  Ball Room New York
+                </a>
+                <p class="card-text mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib
+                  ulum mauris. Lorem ipsum dolor sit amet, consectetur.</p>
+                <a href="#" class="btn donate-now-btn px-5 py-3 mt-4">Donate Now</a>
+              </div>
+            </div>
+            <div>
+              <form action="#">
+                <input type="range" value="83" class="form-range my-5" id="disabledRange" disabled>
+              </form>
+            </div>
+            <div class="money-raised d-flex justify-content-around mb-3">
+              <span class="col-md-4 d-flex justify-content-start">
+                Raised: $56 880
+              </span>
+              <span class="col-md-4 d-flex justify-content-end">
+                Goal: $70 000
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Causes -->
+  <section class="container-fluid d-flex our-Causes">
+    <div class="bg-color">
+      <div class="row container margin-auto justify-content-center">
+        <div class="top-text">
+          <p class="pb-3">
+            Our Causes
+          </p>
+        </div>
+        <!-- three-cards -->
+        <div class="three-cards row container mt-2">
+          <!-- card-one -->
+          <div class="card-one d-flex col-12 col-md-4 justify-content-center my-2">
+            <div class="card">
+              <img src="images/cause-1.jpg.webp" class="card-img-top" alt="children">
+              <a href="#" class="btn donate-now-btn">Donate Now</a>
+              <div class="card-body p-4">
+                <h5 class="card-title">Bring water to the children</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum
+                  mauris.</p>
+                <div>
+                  <form action="#">
+                    <input type="range" value="83" class="form-range my-4" id="disabledRange" disabled>
+                  </form>
+                </div>
+                <div class="money-raised d-flex justify-content-around mb-3">
+                  <span class="col-md-6 d-flex justify-content-start">
+                    Raised: $56 880
+                  </span>
+                  <span class="col-md-6 d-flex justify-content-end">
+                    Goal: $70 000
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card-two -->
+          <div class="card-two d-flex col-12 col-md-4 justify-content-center my-2">
+            <div class="card">
+              <img src="images/cause-2.jpg.webp" class="card-img-top" alt="children">
+              <a href="#" class="btn donate-now-btn">Donate Now</a>
+              <div class="card-body p-4">
+                <h5 class="card-title">Education for all</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum
+                  mauris.</p>
+                <div>
+                  <form action="#">
+                    <input type="range" value="83" class="form-range my-4" id="disabledRange" disabled>
+                  </form>
+                </div>
+                <div class="money-raised d-flex justify-content-around mb-3">
+                  <span class="col-md-6 d-flex justify-content-start">
+                    Raised: $56 880
+                  </span>
+                  <span class="col-md-6 d-flex justify-content-end">
+                    Goal: $70 000
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card-three -->
+          <div class="card-three d-flex col-12 col-md-4 justify-content-center my-2">
+            <div class="card">
+              <img src="images/cause-3.jpg.webp" class="card-img-top" alt="children">
+              <a href="#" class="btn donate-now-btn">Donate Now</a>
+              <div class="card-body p-4">
+                <h5 class="card-title">Bring water to the children</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum
+                  mauris.</p>
+                <div>
+                  <form action="#">
+                    <input type="range" value="83" class="form-range my-4" id="disabledRange" disabled>
+                  </form>
+                </div>
+                <div class="money-raised d-flex justify-content-center mb-3">
+                  <span class="col-md-6 d-flex justify-content-start">
+                    Raised: $56 880
+                  </span>
+                  <span class="col-md-6 d-flex justify-content-end">
+                    Goal: $70 000
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- donation -->
+  <section class="container-fluid donation d-flex">
+    <div class="row container margin-auto">
+      <!-- donation-card-one -->
+      <div class="donation-card-one col-12 col-md-6 d-flex align-items-center justify-content-center my-5">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title py-4">We love to help all the children that have problems in the world. After 15 years
+              we have many goals achieved.</h5>
+            <p class="card-text py-4">Dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis
+              aliquam. Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+      <!-- donation-card-two  -->
+      <div class="donation-card-two col-12 col-md-6 row align-items-center justify-content-center mx-auto mb-3">
+        <!-- card one -->
+        <div class="card col-12 col-md-4 my-3">
+          <div class="card-head-img d-flex align-items-center justify-content-center">
+            <img src="images/teamwork.png.webp" class="card-img-top" alt="team work">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title my-3 mb-4">120 <span>K</span></h5>
+            <p class="card-text mb-3">Children helped</p>
+          </div>
+        </div>
+        <!-- card two -->
+        <div class="card col-12 col-md-4 my-3">
+          <div class="card-head-img d-flex align-items-center justify-content-center">
+            <img src="images/donation.png.webp" class="card-img-top" alt="donation">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title my-3 mb-4">79</h5>
+            <p class="card-text mb-3">Water wells</p>
+          </div>
+        </div>
+        <!-- card three -->
+        <div class="card col-12 col-md-4 my-3">
+          <div class="card-head-img d-flex align-items-center justify-content-center">
+            <img src="images/dove.png.webp" class="card-img-top" alt="dove">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title my-3 mb-4">253</h5>
+            <p class="card-text mb-3">Volunteeres</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="container-fluid footer d-flex">
+    <div class="dark-footer container-fluid d-flex">
+      <div class="row container margin-auto">
+        <!-- footer card one -->
+        <div class="footer-card-one col-12 col-md-3">
+          <div class="card">
+            <img src="images/foot-logo.png.webp" class="card-img-top mb-3" alt="The charity logo">
+            <div class="card-body">
+              <p class="card-text mb-4">Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Mauris temp us vestib
+                ulum mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum
+                mauris.Lorem ipsum dolo.</p>
+              <a href="#" class="btn btn-white px-2"><i class='fab fa-pinterest-p'></i></a>
+              <a href="#" class="btn btn-white px-2"><i class='fab fa-facebook-f'></i></a>
+              <a href="#" class="btn btn-white px-2"><i class='fab fa-twitter'></i></a>
+              <a href="#" class="btn btn-white px-2"><i class='fab fa-dribbble'></i></a>
+              <a href="#" class="btn btn-white px-2"><i class='fab fa-behance'></i></a>
+              <a href="#" class="btn btn-white px-2"><i class='fab fa-linkedin-in'></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- footer card two -->
+        <div class="footer-card-two col-12 col-md-3">
+          <div class="card">
+            <div class="card-body p-0">
+              <h5 class="card-title mt-1 mb-4">Useful Links</h5>
+            </div>
+            <ul class="list-group list-group-flush px-0">
+              <li class="list-group-item py-2"><a href="#" class="footer-items">Privacy Polticy</a></li>
+              <li class="list-group-item py-2"><a href="#" class="footer-items">Become a Volunteer</a></li>
+              <li class="list-group-item py-2"><a href="#" class="footer-items">Donate</a></li>
+              <li class="list-group-item py-2"><a href="#" class="footer-items">Testimonials</a></li>
+              <li class="list-group-item py-2"><a href="#" class="footer-items">Causes</a></li>
+              <li class="list-group-item py-2"><a href="#" class="footer-items">Portfolio</a></li>
+              <li class="list-group-item py-2"><a href="#" class="footer-items">News</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- footer card three -->
+        <div class="footer-card-three col-12 col-md-3">
+          <div class="card">
+            <div class="card-body p-0 mb-3">
+              <h5 class="card-title">Latest News</h5>
+            </div>
+            <ul class="list-group list-group-flush px-0">
+              <li class="list-group-item py-2 px-0"><a href="#" class="footer-items">A new cause to help</a></li>
+              <span class="sub-footer-items mb-4">March 12, 2018</span>
+              <li class="list-group-item py-2 px-0"><a href="#" class="footer-items">We love to help people</a></li>
+              <span class="sub-footer-items mb-4">March 12, 2018</span>
+              <li class="list-group-item py-2 px-0"><a href="#" class="footer-items">The new ideas for helping</a></li>
+              <span class="sub-footer-items mb-4">March 12, 2018</span>
+            </ul>
+          </div>
+        </div>
+        <!-- footer card four -->
+        <div class="footer-card-four col-12 col-md-3">
+          <div class="card">
+            <div class="card-body p-0 mb-3">
+              <h5 class="card-title">Contact</h5>
+            </div>
+            <ul class="list-group list-group-flush px-0">
+              <li class="list-group-item py-2 px-0"><i class='fas fa-phone footer-items-icon'></i><a href="#"
+                  class="footer-items ms-3">+45 677 8993000 223</a></li>
+              <li class="list-group-item py-2 px-0"><i class='fa fa-envelope footer-items-icon'></i><a href="#"
+                  class="footer-items ms-3">office@template.com</a></li>
+              <li class="list-group-item py-2 px-0"><i class='fas fa-map-marker-alt footer-items-icon'></i><a
+                  href="#" class="footer-items ms-3">Main Str. no 45-46, b3, 56832, Los Angeles, CA</a></li>
+            </ul>
+            <div class="input-section">
+              <form action="#" class="d-flex align-items-center mt-4">
+                <input type="email" placeholder="Your email" class="email py-2 px-3">
+                <input type="submit" value="SEND" class="submit py-2 px-3">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- sub footer -->
+  <div class="container-fluid row margin-auto sub-footer">
+    <p class="d-flex align-items-center justify-content-center mb-0">
+      Copyright ©2024 All rights reserved | This template is made with <i class='far fa-heart mx-1'></i> by Colorlib
+    </p>
+  </div>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="fontawesome-free-6.5.2-web/js/all.js"></script>
+</body>
+
+</html>

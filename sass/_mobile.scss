@@ -1,0 +1,296 @@
+$base-color: #ff5a00;
+
+@media(max-width:768px) {
+    .carousel-section {
+        .donate-now{
+            width: 30rem !important;
+            height: 10rem !important;
+            font-size: 3rem !important;
+        }
+    }
+    .top-header {
+        height: 8rem !important;
+        flex-direction: column;
+
+        .right-side {
+            justify-content: center !important;
+        }
+
+        .left-side {
+            justify-content: center;
+        }
+    }
+
+    .sub-header {
+        height: 8rem !important;
+
+        .navbar {
+            flex-direction: column;
+
+            .navbar-child {
+                .text-section {
+                    width: 100%;
+                    justify-content: center !important;
+
+                    .navbar-brand:nth-child(2) {
+                        margin-left: 1rem !important;
+                    }
+                }
+
+                .button-section {
+                    width: 100%;
+                    justify-content: center !important;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .menu {
+        .row {
+            .theCharity-logo {
+                justify-content: center;
+                width: 50%;
+
+                img {
+                    scale: 0.75;
+                }
+            }
+
+            .menu-options {
+                display: none !important;
+            }
+
+            .opening-menu {
+                display: flex !important;
+                width: 50%;
+
+                .offcanvas {
+                    width: 70%;
+                }
+
+                .offcanvas-header {
+                    justify-content: space-between;
+
+                    .btn-close {
+                        margin: 0 !important;
+                    }
+                }
+
+                .flex-grow-1 {
+                    li {
+                        a:hover {
+                            border-bottom: 3px solid $base-color;
+                            color: $base-color;
+                            transition: color .35s;
+                        }
+
+                        .selected-option {
+                            border-bottom: 3px solid $base-color;
+                            color: $base-color;
+                            transition: color .35s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .carousel-card {
+        scale: 0.3 !important;
+
+        .card-body {
+            width: 100% !important;
+            padding: 0 !important;
+        }
+    }
+
+    .custom-cards {
+        .row {
+            .card {
+                margin-bottom: 1rem;
+
+                .card-head {
+                    margin-top: 2rem !important;
+                }
+            }
+        }
+    }
+
+    .long-card {
+
+        .long-card-img,
+        .card-body {
+            justify-content: center !important;
+            text-align: center;
+        }
+    }
+
+    .sub-footer {
+        p {
+            font-size: 8px;
+        }
+    }
+}
+
+@media(max-width:992px) {
+    .carousel-card {
+        scale: 0.6;
+
+        .card-body {
+            width: 100%;
+            padding: 0 !important;
+        }
+    }
+
+    .custom-cards {
+        .card {
+            padding: 0 !important;
+        }
+
+        .card-head {
+            margin-bottom: 0 !important;
+        }
+
+        .h5 {
+            margin: 0 !important;
+        }
+    }
+
+    .welcome-charity {
+        height: 200vh !important;
+
+        .content {
+            .content-child {
+                flex-direction: column;
+
+                .content-text {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .content-picture {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+    .events-section {
+        .row {
+
+            // flex-direction: column !important;
+            h2 {
+                text-align: center;
+            }
+
+            .upcomingEvents {
+                width: 100% !important;
+
+                .img-children {
+                    padding-left: 1rem;
+                }
+            }
+
+            .featuredCause {
+                width: 100% !important;
+                align-items: center;
+            }
+
+            .long-card {
+                .long-card-text {
+                    padding-top: 0.75rem !important;
+                }
+
+                .card-text {
+                    margin: 0.5rem 0 0 !important;
+                }
+            }
+        }
+    }
+
+    .donation {
+        .row {
+            flex-direction: column !important;
+
+            .donation-card-one {
+                width: 100% !important;
+                justify-content: center !important;
+                align-items: center !important;
+                text-align: justify;
+
+                .card-title {
+                    font-size: 1.5rem !important;
+                }
+            }
+
+            .donation-card-two {
+                width: 100% !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+        }
+    }
+
+    .footer {
+        height: 88rem !important;
+
+        .row {
+            flex-direction: column;
+
+            .footer-card-one {
+                margin: 2rem 0;
+                width: 100% !important;
+
+                .card {
+                    display: flex;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    text-align: justify;
+
+                    .card-body {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .footer-card-two {
+                margin: 2rem 0;
+                width: 100% !important;
+                display: flex;
+                justify-content: center !important;
+                align-items: center !important;
+                text-align: justify;
+            }
+
+            .footer-card-three {
+                margin: 2rem 0;
+                width: 100% !important;
+                display: flex;
+                justify-content: center !important;
+                align-items: center !important;
+                text-align: justify;
+            }
+
+            .footer-card-four {
+                margin: 2rem 0;
+                width: 100% !important;
+
+                .card {
+                    display: flex;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    text-align: justify;
+
+                    .list-group {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

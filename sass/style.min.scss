@@ -1,0 +1,682 @@
+@use"layout";
+@use"boot";
+@use"mobile";
+$base-color: #ff5a00;
+
+.top-header {
+    background-color: #333;
+    height: 3.75rem;
+    position: fixed;
+    z-index: 10;
+
+    .right-side {
+        nav {
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 1rem;
+                border-right: 1px solid black;
+                border-left: 1px solid black;
+                .white-color{
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+            a:hover {
+                background-color: #131313;
+            }
+
+            a:nth-child(4) {
+                background-color: rgb(120, 205, 50);
+            }
+
+            a:nth-child(4):hover {
+                background-color: #131313;
+            }
+        }
+    }
+
+    .left-side {
+        img {
+            padding: 1rem;
+            width: 160px;
+            height: 30px;
+            padding: 0 20px;
+        }
+
+        a {
+            color: #9B9B9B;
+            text-decoration: none;
+            font-size: 1rem;
+            background-color: #131313;
+            padding: 1rem;
+
+            span {
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.sub-header {
+    background: $base-color;
+    height: 3.5rem;
+
+    .navbar {
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0;
+        height: 3.5rem;
+    }
+
+    .navbar-child {
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0;
+        height: 3.5rem;
+    }
+
+    .navbar-brand:nth-child(2) {
+        margin-left: 2rem !important;
+    }
+
+    .navbar-brand:hover {
+        color: #fff;
+    }
+
+    .donate-button {
+        background-color: #000;
+        color: #fff;
+        height: 3.5rem;
+        width: 10rem;
+        border-radius: 0;
+    }
+
+    .button-section {
+        padding-right: 2rem;
+    }
+
+    a {
+        font-size: 12px;
+        color: #fff;
+    }
+}
+
+.menu {
+    max-width: 100% !important;
+
+    .row {
+        height: 6rem;
+    }
+
+    .theCharity-logo {
+        height: 100%;
+    }
+
+    .menu-options {
+        height: 100%;
+
+        nav {
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                li {
+                    margin: 0 1rem;
+
+                    a {
+                        color: #262626;
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        padding-bottom: 1.5rem;
+                    }
+
+                    a:hover {
+                        border-bottom: 3px solid $base-color;
+                        color: $base-color;
+                        transition: color .35s;
+                    }
+
+                    .home-option {
+                        border-bottom: 3px solid $base-color;
+                        color: $base-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.carousel-section {
+    .carousel-inner {
+        img {
+            filter: brightness(0.5);
+        }
+    }
+
+    .carousel-control-prev-icon {
+        background-color: $base-color;
+        border-radius: 2rem;
+        padding: 1.5rem;
+    }
+
+    .carousel-control-next-icon {
+        background-color: $base-color;
+        border-radius: 2rem;
+        padding: 1.5rem;
+    }
+
+    .carousel-images {
+        position: relative;
+
+        .carousel-card {
+            background-color: transparent;
+            position: absolute;
+            color: #fff;
+            border: none;
+            height: 100%;
+
+            .card-body {
+                width: 50%;
+                flex-direction: column;
+                padding-left: 9rem;
+            }
+
+            h5 {
+                font-size: 102px;
+                font-weight: 600;
+            }
+
+            h6 {
+                font-size: 46px;
+                font-weight: 600;
+            }
+
+            p {
+                font-weight: 500;
+                line-height: 1.8;
+            }
+
+            .card-link {
+                text-decoration: none;
+                color: #fff;
+                padding: 1rem 2rem;
+                border-radius: 7rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .donate-now {
+                background-color: $base-color;
+                width: 11rem;
+                height: 3rem;
+            }
+
+            .read-more {
+                border: 2px solid $base-color;
+                width: 11rem;
+                height: 3rem;
+            }
+
+            .read-more:hover {
+                background-color: $base-color;
+            }
+
+            .card-buttons {
+                display: flex;
+                flex-direction: row !important;
+                gap: 10px;
+            }
+        }
+    }
+}
+
+.custom-cards {
+    .row {
+        .card {
+            background-color: #ecf2f5;
+            height: 20rem;
+            border-radius: 2rem;
+
+            .card-body {
+
+                h5,
+                p {
+                    text-align: center;
+                }
+
+                h5 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            .card-head {
+                img {
+                    width: 55px;
+                    height: 60px;
+                }
+            }
+        }
+
+        .becomeVolunteer {
+            .card {
+                background-color: $base-color;
+                color: #fff;
+            }
+        }
+
+        .danceMusic {
+            .card:hover {
+                background-color: $base-color;
+                color: #fff;
+            }
+        }
+
+        .onlineConference {
+            .card:hover {
+                background-color: $base-color;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.welcome-charity {
+    background-image: url("../images/hero.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40rem;
+
+    .content {
+        width: 100%;
+        height: 100%;
+        background-color: #000000e0;
+
+        .content-child {
+            .content-text {
+                .card {
+                    background-color: transparent;
+                    color: #fff;
+
+                    h5 {
+                        font-size: 36px;
+                        font-weight: 600;
+                        padding-bottom: 1rem;
+                        border-bottom: 3px solid $base-color;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 2;
+                        color: #b7b7b7;
+                    }
+
+                    .btn {
+                        background-color: $base-color;
+                        color: #fff;
+                        width: 10rem;
+                        height: 3rem;
+                        border-radius: 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.events-section {
+    .card {
+        --bs-card-border-width: 0;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+        border-bottom: 5px solid $base-color;
+        padding-bottom: 1rem;
+    }
+
+    .read-more-link {
+        text-decoration: none;
+        color: $base-color;
+    }
+
+    .custom-card-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #262626;
+        margin-bottom: 0;
+    }
+
+    .custom-card-title:hover {
+        text-decoration: underline;
+    }
+
+    .time-span,
+    .place-span {
+        font-size: 11px;
+        font-weight: 500;
+        color: #262626;
+        text-decoration: none;
+    }
+
+    .time-span:hover,
+    .place-span:hover {
+        text-decoration: underline;
+    }
+
+    .card-text {
+        font-size: 14px;
+        color: #929191;
+    }
+
+    .upcomingEvents {
+        flex-direction: column;
+    }
+
+    .featuredCause {
+        flex-direction: column;
+    }
+
+    .long-card {
+        background: #edf3f5;
+        height: 100%;
+        border-radius: 0;
+
+        .card-text {
+            font-size: 14px;
+            color: #929191;
+            line-height: 1.8;
+        }
+
+        .money-raised {
+            font-size: 14px;
+            color: #929191;
+            font-weight: 400;
+        }
+    }
+
+    .donate-now-btn {
+        background-color: $base-color;
+        color: #fff;
+        border-radius: 1.5rem;
+    }
+}
+
+.our-Causes {
+    background-image: url("../images/cause-bg.jpg.webp");
+    background-size: cover;
+    width: 100%;
+    height: auto !important;
+    background-position: center;
+
+    .bg-color {
+        background: #e8edeecc;
+        width: 100%;
+        height: 100% !important;
+
+        .row {
+            margin-top: 5rem;
+
+            .top-text {
+                p {
+                    font-size: 36px;
+                    font-weight: 600;
+                    border-bottom: 5px solid $base-color;
+                }
+            }
+
+            .card-title {
+                font-size: 18px;
+                font-weight: 600;
+                color: #262626;
+            }
+
+            .card-text {
+                font-size: 14px;
+                color: #929191;
+            }
+
+            .money-raised {
+                span {
+                    font-size: 14px;
+                    color: #929191;
+                }
+            }
+        }
+
+        .three-cards {
+            .card-img-top {
+                position: relative;
+            }
+
+            .donate-now-btn {
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -75%);
+                background-color: $base-color;
+                color: #fff;
+                border-radius: 2rem;
+                padding: 1rem 2.5rem;
+                display: none;
+            }
+
+            .card:hover {
+                .card-img-top {
+                    filter: brightness(0.4);
+                    transition: 0.3s;
+                }
+
+                .donate-now-btn {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.donation {
+    .row {
+        .card {
+            border: none;
+
+            .card-title {
+                font-size: 40px;
+                font-weight: 500;
+                color: #262626;
+            }
+
+            .card-text {
+                font-size: 14px;
+                color: #595858;
+            }
+
+            img {
+                width: 82px;
+                height: 82px;
+            }
+        }
+
+        .donation-card-one {
+            .card-title {
+                border-bottom: 5px solid $base-color;
+            }
+        }
+
+        .donation-card-two {
+            .card {
+                .card-body {
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-image: url("../images/foot-bg.jpg.webp");
+    width: 100%;
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+
+    .dark-footer {
+        background: rgba(22, 22, 22, .92);
+
+        .row {
+            .footer-card-one {
+                .card {
+                    background-color: transparent;
+                    border: none !important;
+
+                    .card-text {
+                        font-size: 14px;
+                        line-height: 2;
+                        color: #929191;
+                    }
+
+                    .btn-white {
+                        color: #fff;
+                    }
+
+                    .btn-white:hover {
+                        color: $base-color;
+                    }
+                }
+
+                .card-img-top {
+                    width: 200px;
+                    height: 30px;
+                }
+            }
+
+            .footer-card-two {
+                .card {
+                    background-color: transparent;
+                    border: none !important;
+
+                    .card-title {
+                        font-size: 18px;
+                        color: #fff;
+                    }
+
+                    .list-group {
+                        .list-group-item {
+                            border: none !important;
+                            font-size: 14px;
+                            background-color: transparent;
+
+                            .footer-items {
+                                text-decoration: none;
+                                color: #a2a1a1
+                            }
+
+                            .footer-items:hover {
+                                color: $base-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-card-three {
+                .card {
+                    background-color: transparent !important;
+                    border: none !important;
+
+                    .card-title {
+                        font-size: 18px;
+                        color: #fff;
+                    }
+
+                    .list-group {
+                        .list-group-item {
+                            border: none !important;
+                            font-size: 14px;
+                            background-color: transparent;
+
+                            .footer-items {
+                                color: #a2a1a1;
+                                text-decoration: none;
+                            }
+
+                            .footer-items:hover {
+                                color: $base-color;
+                            }
+                        }
+
+                        .sub-footer-items {
+                            font-size: 12px;
+                            color: $base-color;
+                        }
+                    }
+                }
+            }
+
+            .footer-card-four {
+                .card {
+                    background-color: transparent !important;
+                    border: none !important;
+
+                    .card-title {
+                        font-size: 18px;
+                        color: #fff;
+                    }
+
+                    .list-group {
+                        .list-group-item {
+                            background-color: transparent !important;
+                            border: none !important;
+                        }
+
+                        .footer-items {
+                            color: #a2a1a1;
+                            text-decoration: none;
+                        }
+
+                        .footer-items-icon {
+                            color: $base-color;
+                        }
+                    }
+                }
+
+                .input-section {
+                    .email {
+                        font-size: 12px;
+                        color: #131212;
+                        border: none !important;
+                    }
+
+                    .email:focus-visible {
+                        outline: 0;
+                    }
+
+                    .submit {
+                        font-size: 12px;
+                        color: #fff;
+                        background-color: $base-color;
+                        border: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sub-footer {
+    font-size: 12px;
+    color: #7b7b7b;
+    background: #131212;
+    text-align: center;
+    height: 5rem;
+}
